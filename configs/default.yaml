@@ -1,0 +1,45 @@
+# Paths are relative to this YAML file, not to the current working directory.
+mode: evirar
+resources:
+  knowledge: ../resources/knowledge
+  experience: ../resources/experience
+generation:
+  temperature: 1.0
+  max_tokens: 2048
+  top_p: 0.95
+  presence_penalty: 1.5
+  # Local doctor and internal reasoning parameters from the research setup.
+  extra_body:
+    enable_thinking: false
+    min_p: 0.0
+    repetition_penalty: 1.0
+    chat_template_kwargs:
+      enable_thinking: false
+simulator_generation:
+  # Patient/assistant use temperature 0.6; expert scoring uses 0.0.
+  # Neither inherits the local doctor's presence penalty.
+  temperature: 0.7
+  max_tokens: 2048
+  top_p: 0.95
+  presence_penalty: 0.0
+  extra_body:
+    enable_thinking: false
+retrieval:
+  top_k: 10
+  validation_threshold: 0.6
+  max_decision_cards: 5
+  metadata_prefilter: false
+  evidence_classification: true
+  dynamic_evidence: true
+  validation_batch: true
+  validation_batch_size: 10
+  validation_workers: 10
+reflection:
+  max_iterations: 3
+  score_threshold: 7.0
+runtime:
+  max_turns: 10
+  timeout_seconds: 120.0
+  max_retries: 2
+  embedding_batch_size: 16
+
