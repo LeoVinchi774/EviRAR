@@ -7,7 +7,7 @@ This is the official repository for the paper **Evidence-Guided Retrieval-Augmen
 ```bash
 git clone https://github.com/LeoVinchi774/EviRAR.git
 cd EviRAR
-python -m pip install -e ".[dev]"
+python -m pip install -e .
 cp .env.example .env
 ```
 
@@ -123,5 +123,4 @@ resources/knowledge/     Syndrome knowledge cards
 resources/experience/    Consultation-experience cards
 src/evirar/              Retrieval, self-refinement, service clients, and CLI
 scripts/                 Installation checks and run scripts
-tests/                   Offline tests
 ```

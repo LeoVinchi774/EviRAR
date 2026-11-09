@@ -1,11 +1,11 @@
-name: tests
+name: checks
 
 on:
   push:
   pull_request:
 
 jobs:
-  test:
+  validate:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install -e ".[dev]"
-      - run: python -m pytest
+      - run: python -m pip install -e .
       - run: python -m compileall -q src
+      - run: evirar --config configs/baseline.yaml --check
+      - run: evirar --config configs/default.yaml --check

@@ -9,7 +9,7 @@ else
     cli=$(command -v evirar || true)
 fi
 if [ -z "$cli" ] || [ ! -x "$cli" ]; then
-    echo "EviRAR is not installed. Activate your environment and run: python -m pip install -e '.[dev]'" >&2
+    echo "EviRAR is not installed. Activate your environment and run: python -m pip install -e ." >&2
     exit 1
 fi
 "$python_bin" -c 'import openai, yaml, dotenv; print("Python dependencies: OK")'

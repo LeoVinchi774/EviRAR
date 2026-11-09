@@ -11,15 +11,9 @@ license = {file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = ["openai>=1.30,<3", "PyYAML>=6,<7", "python-dotenv>=0.21,<2"]
 
-[project.optional-dependencies]
-dev = ["pytest>=8,<10"]
-
 [project.scripts]
 evirar = "evirar.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
 
