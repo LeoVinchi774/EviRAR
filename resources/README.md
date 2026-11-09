@@ -16,6 +16,6 @@ Filenames follow `KC_<four-digit ID>_<entry name>.md`, for example `KC_0001_ä¼¤é
 
 ## Provenance and redistribution
 
-The bundle was copied from a local research artifact when this standalone project was assembled. A card-by-card source manifest and redistribution permissions have not yet been confirmed. Verify the source and rights for the national-standard-derived knowledge entries and every experience document before publishing or redistributing this directory. Remove or replace any entry containing personal or otherwise restricted information unless its use is authorized.
+The bundle was copied from a local research artifact when this standalone project was assembled. A card-by-card source manifest and redistribution permissions have not yet been confirmed. The repository's Apache-2.0 software license does not grant rights to these cards. Verify the source and rights for the national-standard-derived knowledge entries and every experience document before publishing or redistributing this directory. Remove or replace any entry containing personal or otherwise restricted information unless its use is authorized.
 
 Embedding caches are created under the local user's cache directory and are not part of this resource bundle.

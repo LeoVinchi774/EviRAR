@@ -111,6 +111,10 @@ python scripts/summarize_results.py results/baseline_XXX.jsonl
 
 `resources/knowledge/` contains 500 syndrome knowledge cards, and `resources/experience/` contains 500 Markdown consultation-experience cards. See [resources/README.md](resources/README.md) for card fields and usage instructions. The complete resource collections are planned for release upon acceptance of the paper.
 
+## License
+
+The EviRAR source code is licensed under the [Apache License, Version 2.0](LICENSE). The license for the bundled knowledge and consultation-experience cards is not established by this software license; their sources and redistribution permissions must be verified separately.
+
 ## Project Structure
 
 ```text
